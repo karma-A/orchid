@@ -25,7 +25,7 @@ const Select = () => {
                 className="accordion-title"
                 onClick={() => setIsActive(!isActive)}
                 >
-                <div >{title}</div>
+                <div ><span>{title}</span></div>
                 <div className="link">
                     {link}
                     <div className="sign">{isActive ? '-' : '+'}</div>
