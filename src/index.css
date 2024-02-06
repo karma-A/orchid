@@ -1,0 +1,25 @@
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.accordion-title {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    gap: 10px;
+    padding-left: 20%;
+    cursor: pointer;
+}
+.accordion-title:hover {
+    background-color: blueviolet;
+    font-weight: 600;
+
+    .link {
+
+        font-weight: normal;
+    }
+}
+
+.link{
+    display: flex;
+}
