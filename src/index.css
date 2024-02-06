@@ -3,12 +3,14 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .accordion-title {
+    margin-top: 2px;
     display: flex;
     flex-direction: row;
     justify-content:flex-start;
     gap: 10px;
     padding-left: 20%;
     cursor: pointer;
+    background-color:#F0F0F0;
 }
 .accordion-title:hover {
     font-weight: 600;
@@ -21,6 +23,14 @@ body {
         font-weight: 600;
     }
 }
+.accordion-content {
+    background-color: #F0F0F0;
+}
 .link{
     display: flex;
+    color: blue;
+}
+.sign{
+    color:initial;
+    text-decoration: none;
 }
