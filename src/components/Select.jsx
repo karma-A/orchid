@@ -28,7 +28,7 @@ const Select = () => {
                 <div >{title}</div>
                 <div className="link">
                     {link}
-                    <div className="sign">{isActive ? '🔺' : '🔻'}</div>
+                    <div className="sign">{isActive ? '-' : '+'}</div>
                 </div>
 
                 </div>
