@@ -16,6 +16,7 @@ body {
 
     .link {
         font-weight: normal;
+        gap: 0;
     }
     .sign {
         font-weight: 600;
