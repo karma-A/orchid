@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Accordion } from "react-bootstrap"
-
-
+import { FaLock } from "react-icons/fa";
+import { HiMiniBuildingLibrary } from "react-icons/hi2";
 
 
 
@@ -10,12 +10,11 @@ const Select = () => {
         title: 'Burmese Orchid Website',
         logo: 'https://shorturl.at/CLTU2',
         link: 'How to idenify',
-        content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
-            laborum cupiditate possimus labore, hic temporibus velit dicta earum
-            suscipit commodi eum enim atque at? Et perspiciatis dolore iure
-            voluptatem.`
+        leftContent: `Official website links end with .com`,
+        trustedWeb: `https://www.burmeseorchid.org/trusted-websites`,
+        rightContent: 'Secure websites use HTTPS'
         };
-        const {title,link,logo, content}= accordionData;
+        const {title,link,logo, leftContent, trustedWeb, rightContent}= accordionData;
 
         const [isActive, setIsActive] = useState(false);
   return (
@@ -34,7 +33,19 @@ const Select = () => {
                 </div>
 
                 </div>
-                {isActive && <div className="accordion-content">{content}</div>}
+                {isActive && <div className="accordion-content">
+                    <div className="accordion-leftContent accordion-content0">
+                        <HiMiniBuildingLibrary style={{ paddingRight: "5px", fontSize:"20px" }}/>
+                        <span id="accordion-bold">{leftContent}</span>
+                        <a id="trustWeb" href={trustedWeb} style={{ textDecoration:"none", fontFamily:"Time New Roman"}}>Trusted website</a>
+                    </div>
+                    <div className="accordion-rightContent accordion-content0">
+                        <FaLock style={{ paddingRight:"5px", fontSize:"15px" }} />
+                        <span id="accordion-bold">{rightContent}</span><br />
+                        <span style={{ fontFamily:"Times New Roman" }}
+                        >Look for a lock (<FaLock fontSize="10px"/>) or https:// as an added precaution. Share sensitive information only on official, secure websites.</span>
+                    </div>
+                </div>}
             </div>
         </div>
     </Accordion>
