@@ -25,7 +25,7 @@ const Select = () => {
                 className="accordion-title"
                 onClick={() => setIsActive(!isActive)}
                 >
-                <img  src={logo}/>
+                {/* <img  src={logo}/> */}
                 <div ><span>{title}</span></div>
                 <div className="link">
                     {link}
