@@ -1,6 +1,12 @@
 
 body {
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+    font-family:'Times New Roman', Times, serif;
+}
+@media (max-width: 768px) {
+    .accordion-title {
+        gap: 5px;
+        justify-content: space-evenly;
+    }
 }
 .accordion-title {
     margin-top: 2px;
