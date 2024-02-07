@@ -14,7 +14,7 @@ const Select = () => {
         trustedWeb: `https://www.burmeseorchid.org/trusted-websites`,
         rightContent: 'Secure websites use HTTPS'
         };
-        const {title,link,logo, leftContent, trustedWeb, rightContent}= accordionData;
+        const {title,link, leftContent, trustedWeb, rightContent}= accordionData;
 
         const [isActive, setIsActive] = useState(false);
   return (
