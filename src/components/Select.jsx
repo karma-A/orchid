@@ -8,7 +8,7 @@ import { Accordion } from "react-bootstrap"
 const Select = () => {
     const accordionData = {
         title: 'Burmese Orchid Website',
-        logo: '/logo.png',
+        logo: 'https://shorturl.at/CLTU2',
         link: 'How to idenify',
         content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
             laborum cupiditate possimus labore, hic temporibus velit dicta earum
