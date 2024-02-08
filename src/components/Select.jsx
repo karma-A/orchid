@@ -7,10 +7,10 @@ import { HiMiniBuildingLibrary } from "react-icons/hi2";
 
 const Select = () => {
     const accordionData = {
-        title: 'Burmese Orchid Website',
+        title: 'Burmese Orchid',
         logo: './logo.png',
         link: 'How to idenify',
-        leftContent: `Official website links end with .com`,
+        leftContent: `Official website links end with .org`,
         trustedWeb: `https://www.burmeseorchid.org/trusted-websites`,
         rightContent: 'Secure websites use HTTPS'
         };
