@@ -2,18 +2,11 @@ import { useState } from "react";
 import { Accordion } from "react-bootstrap"
 import { FaLock } from "react-icons/fa";
 import { HiMiniBuildingLibrary } from "react-icons/hi2";
-
+import accordionData from "./data";
 
 
 const Select = () => {
-    const accordionData = {
-        title: 'Burmese Orchid',
-        logo: './logo.png',
-        link: 'How to idenify',
-        leftContent: `Official website links end with .org `,
-        trustedWeb: `https://www.burmeseorchid.org/trusted-websites`,
-        rightContent: 'Secure websites use HTTPS'
-        };
+
         const {title,link, leftContent, trustedWeb, rightContent}= accordionData;
 
         const [isActive, setIsActive] = useState(false);
